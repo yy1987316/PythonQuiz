@@ -163,3 +163,6 @@ list(filter(lambda x: x>5, a))
 ```python
 list(map(lambda x: x*2, a))
 ```
+## 17.Python垃圾回收
+Python中的垃圾回收是以引用计数为主，分代收集为辅。引用计数的缺陷是循环引用的问题。
+在Python中，如果一个对象的引用数为0，Python虚拟机就会回收这个对象的内存。
