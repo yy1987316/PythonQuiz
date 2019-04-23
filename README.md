@@ -25,7 +25,7 @@ python参数传递采用的是“传对象引用”的方式。这种方式相�
 *args 收集位置参数到元组
 **kwargs 收集关键字参数到字典
 ```
-> 扩展：分配参数。与其相反，定义函数是不带*或**，调用时参数前加*或**，分别将元组或字典中的值，分配给函数的位置或关键字参数。
+> 扩展：分配参数。与其相反，定义函数是不带\*或**，调用时参数前加\*或**，分别将元组或字典中的值，分配给函数的位置或关键字参数。
 
 
 ## 4.python中实现单例模式的几种方式
@@ -67,6 +67,7 @@ a2 = A(20)
 class Singleton():
   def __init__(self):
     pass
+    
   @classmethod
   def instance(cls, *args, **kwargs):
     if not hasattr(Singleton, "_instance"):
@@ -109,16 +110,16 @@ readlines()方法读取整个文件所有行，保存在一个列表(list)变量
 ## 6.Post和Get的区别
 ## 7.Cookie和Session的区别
 ## 8.Python2.x与Python3.x的区别
-print函数
-ASCII，Unicode
-除法运算
-异常
-xrange, raw_input, file
-八进制字面量表示，必须有o
-不等运算符，去掉了<>
-去掉了repr表达式``
-多个模块被改名 ConfigParser -> configparser
-数据类型：去除了long，增加了bytes，有些方法返回改为可迭代对象map filter dict.keys()...
+print函数  
+ASCII，Unicode  
+除法运算  
+异常  
+xrange, raw_input, file  
+八进制字面量表示，必须有o  
+不等运算符，去掉了<>  
+去掉了repr表达式\`\`  
+多个模块被改名 ConfigParser -> configparser  
+数据类型：去除了long，增加了bytes，有些方法返回改为可迭代对象map filter dict.keys()...  
 ## 9.Python的数据类型
 整型、浮点型、布尔型、字符串、元组、列表、字典、集合
 ## 10.tuple和list的区别
